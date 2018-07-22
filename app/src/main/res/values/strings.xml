@@ -2,4 +2,9 @@
     <string name="app_name">XTicket</string>
     <string name="label_login_info">Preencha seus dados de acesso</string>
     <string name="label_button_login">Acessar</string>
+    <string name="recovery_pass_login">Esqueci minha senha</string>
+    <string name="new_account_login">Cadastre-se</string>
+    <string name="title_recovery_pass">Recuperar senha</string>
+    <string name="info_label_recovery_pass">Para recuperar sua senha é fácil e rápido. Basta você informar seu email cadastrado e pronto em alguns instantes você receberá um notificação com sua nova senha.</string>
+    <string name="label_button_recovery_pass">Recuperar senha</string>
 </resources>
