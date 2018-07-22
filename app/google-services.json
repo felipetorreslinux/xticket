@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "263279768480",
+    "firebase_url": "https://xticket-b3e4e.firebaseio.com",
+    "project_id": "xticket-b3e4e",
+    "storage_bucket": "xticket-b3e4e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:263279768480:android:4273da083b389a32",
+        "android_client_info": {
+          "package_name": "com.xticket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "263279768480-dl7odtqo6reqj7g2nspdi19jktdbu14b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.xticket",
+            "certificate_hash": "083a212123526367c4fdbbd4b916a13bdfc5181d"
+          }
+        },
+        {
+          "client_id": "263279768480-lsec2367rsktf4dvlopgvoe2cp6umosh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHdyfRQAVR4aRaUFAYD7MMIdCyKE4ZMNQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "263279768480-lsec2367rsktf4dvlopgvoe2cp6umosh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
