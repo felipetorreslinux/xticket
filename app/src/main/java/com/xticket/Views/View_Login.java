@@ -64,7 +64,8 @@ public class View_Login extends Activity implements View.OnClickListener{
                 break;
 
             case R.id.button_new_account:
-
+                Intent new_account = new Intent(View_Login.this, View_New_Account.class);
+                startActivity(new_account);
                 break;
         }
     }

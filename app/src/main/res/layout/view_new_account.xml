@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFundoApp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorWhite">
+
+        <ImageView
+            android:id="@+id/button_back_new_account"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_back_long"
+            android:paddingVertical="13dp"
+            android:tint="@color/colorBlack"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_new_account"
+            android:textSize="19dp"
+            android:fontFamily="@font/roboto"
+            android:textColorHighlight="@color/colorBlack"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="@string/info_label_new_account"
+                android:fontFamily="@font/roboto"
+                android:textSize="16dp"
+                android:layout_marginBottom="16dp"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nome"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/roboto"
+                    android:paddingVertical="5dp"/>
+
+                <EditText
+                    android:id="@+id/name_new_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_new_account"
+                    android:fontFamily="@font/roboto"
+                    android:padding="10dp"
+                    android:textSize="16dp"
+                    android:inputType="textAutoCorrect"
+                    android:textColor="@color/colorBlack"
+                    android:elevation="1dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/roboto"
+                    android:paddingVertical="5dp"/>
+
+                <EditText
+                    android:id="@+id/email_new_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_new_account"
+                    android:fontFamily="@font/roboto"
+                    android:padding="10dp"
+                    android:textSize="16dp"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/colorBlack"
+                    android:elevation="1dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Usuário"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/roboto"
+                    android:paddingVertical="5dp"/>
+
+                <EditText
+                    android:id="@+id/username_new_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_new_account"
+                    android:fontFamily="@font/roboto"
+                    android:padding="10dp"
+                    android:textSize="16dp"
+                    android:inputType="textNoSuggestions"
+                    android:textColor="@color/colorBlack"
+                    android:elevation="1dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Senha"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/roboto"
+                    android:paddingVertical="5dp"/>
+
+                <EditText
+                    android:id="@+id/password_new_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_new_account"
+                    android:fontFamily="@font/roboto"
+                    android:padding="10dp"
+                    android:textSize="16dp"
+                    android:inputType="textPassword"
+                    android:textColor="@color/colorBlack"
+                    android:elevation="1dp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_new_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_login"
+                android:layout_marginVertical="24dp"
+                android:layout_marginHorizontal="16dp"
+                android:text="@string/label_button_new_account"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/roboto"
+                android:textSize="14dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

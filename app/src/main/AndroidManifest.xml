@@ -33,6 +33,11 @@
             android:windowSoftInputMode="stateHidden|adjustResize"
             android:theme="@style/Login"/>
 
+        <activity android:name=".Views.View_New_Account"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:theme="@style/Login"/>
+
 
     </application>
 
