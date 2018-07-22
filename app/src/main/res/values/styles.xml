@@ -4,6 +4,8 @@
         <item name="android:background">@drawable/splash_backgorund</item>
     </style>
 
+    <style name="Login" parent="android:Theme.DeviceDefault.Light.NoActionBar.Fullscreen"/>
+
     <style name="AppTheme" parent="android:Theme.DeviceDefault.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
