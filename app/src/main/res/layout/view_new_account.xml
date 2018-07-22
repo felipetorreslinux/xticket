@@ -73,7 +73,7 @@
                     android:fontFamily="@font/roboto"
                     android:padding="10dp"
                     android:textSize="16dp"
-                    android:inputType="textAutoCorrect"
+                    android:inputType="textCapWords"
                     android:textColor="@color/colorBlack"
                     android:elevation="1dp"/>
 

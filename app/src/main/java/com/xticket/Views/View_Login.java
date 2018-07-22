@@ -14,9 +14,14 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.xticket.R;
+import com.xticket.Services.Login_Service;
 import com.xticket.Utils.Email;
+import com.xticket.Utils.Keyboard;
+import com.xticket.Utils.ProgressLoad;
 
 public class View_Login extends Activity implements View.OnClickListener{
+
+    Login_Service _loginService;
 
     LinearLayout box_login;
     EditText email_login;
@@ -29,6 +34,8 @@ public class View_Login extends Activity implements View.OnClickListener{
     protected void onPostCreate(@Nullable Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
         setContentView(R.layout.view_login);
+
+        _loginService = new Login_Service(this);
 
         box_login = (LinearLayout) findViewById(R.id.box_login);
         email_login = (EditText) findViewById(R.id.email_login);
@@ -86,7 +93,9 @@ public class View_Login extends Activity implements View.OnClickListener{
             builder.setPositiveButton("Ok", null);
             builder.create().show();
         }else{
-
+            Keyboard.close(this, getWindow().getDecorView());
+            ProgressLoad.open(this, null, "Autorizando...", false);
+            _loginService.access(email, password);
         }
     }
 
