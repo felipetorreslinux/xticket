@@ -31,11 +31,13 @@ public class Login_Service {
     Activity activity;
     static AlertDialog.Builder builder;
     FirebaseAuth firebaseAuth;
+    SharedPreferences.Editor editor;
 
     public Login_Service(Activity activity){
         this.activity = activity;
         builder = new AlertDialog.Builder(activity);
         firebaseAuth = FirebaseAuth.getInstance();
+        editor = activity.getSharedPreferences("profile", Context.MODE_PRIVATE).edit();
     }
 
     public void access (final String email, final String password){
@@ -45,9 +47,14 @@ public class Login_Service {
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if(task.isSuccessful()){
                         ProgressLoad.close();
-                        Intent intent = new Intent(activity, View_Principal.class);
-                        activity.startActivity(intent);
-                        activity.finishAffinity();
+                        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                        editor.putString("token_access", user.getUid());
+                        editor.commit();
+                        if(editor.commit()){
+                            Intent intent = new Intent(activity, View_Principal.class);
+                            activity.startActivity(intent);
+                            activity.finishAffinity();
+                        }
                     }else{
                         ProgressLoad.close();
                         builder.setTitle("Ops!!!");
